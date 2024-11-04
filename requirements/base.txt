@@ -1,0 +1,15 @@
+numpy
+pandas
+torch
+transformers
+spacy
+nltk
+scikit-learn
+python-dotenv
+pydantic
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+pika
+redis
