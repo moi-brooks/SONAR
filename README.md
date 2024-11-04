@@ -8,3 +8,4 @@ The Phishing Detection System API provides endpoints for real-time phishing dete
 
 ## Authentication
 All API endpoints require JWT authentication. Include the token in the Authorization header:
+`Authorization: Bearer {token}`    
