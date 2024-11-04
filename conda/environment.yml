@@ -4,24 +4,37 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10
-  - pip=23.2.1
-  - numpy=1.24.3
-  - pandas=2.0.3
-  - pytorch=2.1.0
-  - cudatoolkit=11.8
-  - spacy=3.7.2
-  - nltk=3.8.1
-  - scikit-learn=1.3.0
+  - python=3.9
+  - pip
+  # Core Data Science & ML
+  - numpy~=1.24.0
+  - pandas~=2.0.0
+  - pytorch==2.1.0
+  - scikit-learn~=1.3.0
+  # NLP
+  - spacy~=3.7.0
+  - nltk~=3.8.0
   - pip:
-    - transformers==4.34.0
-    - fastapi==0.104.0
-    - uvicorn==0.23.2
-    - pydantic==2.4.2
-    - sqlalchemy==2.0.21
-    - psycopg2-binary==2.9.9
-    - pika==1.3.1
-    - redis==5.0.1
-    - python-dotenv==1.0.0
-    - spacy-transformers==1.3.4
-    - beautifulsoup4==4.12.2 
+    # Additional packages via pip
+    - transformers~=4.34.0
+    - fastapi~=0.104.0
+    - uvicorn[standard]~=0.23.0
+    - pydantic~=2.4.0
+    - sqlalchemy~=2.0.0
+    - psycopg2-binary~=2.9.0
+    - pika~=1.3.0
+    - redis~=5.0.0
+    - python-dotenv~=1.0.0
+    # Development tools
+    - pytest~=7.4.0
+    - pytest-cov~=4.1.0
+    - pytest-asyncio~=0.21.0
+    - black~=23.9.0
+    - flake8~=6.1.0
+    - isort~=5.12.0
+    - mypy~=1.5.0
+    - ipython~=8.15.0
+    - jupyter~=1.0.0
+    # Production
+    - gunicorn~=21.2.0
+    - prometheus-client~=0.17.0
