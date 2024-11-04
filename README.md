@@ -1,3 +1,10 @@
-# AI Phishing Detection System
+# API Documentation
 
-An intelligent system that leverages NLP to detect and neutralize phishing attempts in real-time.
+## Overview
+The Phishing Detection System API provides endpoints for real-time phishing detection and analysis.
+
+## Base URL
+`/api/v1`
+
+## Authentication
+All API endpoints require JWT authentication. Include the token in the Authorization header:
